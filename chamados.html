@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1> Área de chamados</h1>
+   <div class="botoes">
+
+    <button type="submit" class="botaonovo" onclick="novochamado()">Abrir novo chamado</button>
+    <script>
+
+        function novochamado(){
+            if(confirm("Abrir um novo chamado?")){
+                window.location.href = "abrechamado.html";
+            }
+        }
+    </script>
+
+    <button type="submit" class="botaomeus" onclick="meuschamados()">Ver meus chamados</button>
+
+    <script>
+
+        function meuschamados(){
+            if(confirm("Procurar chamados abertos por mim?")){
+                window.location.href = "meuschamados.html";
+            }
+        }
+    </script>
+   </div>
+
+
+</body>
+</html>

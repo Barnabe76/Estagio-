@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formulario de abertura de chamado</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1>Formulário de abertura de chamado</h1>
+
+            <br>
+            <br>
+            <form name="form1" method="post"     > <!-- Formulário de abertura de chamado, linkar com banco de dados e chat -->
+                <label for="problema">Selecione seu tipo de problema</label>
+                <select name="problema" id="problema" required class="form" placeholder="Selecione o tipo de problema">
+                    <option value="">Selecione o tipo de problema</option>
+                    <option value="tipo0">Peças/Cabos</option>
+                    <option value="tipo1">Site</option>
+                    <option value="tipo2">Banco de dados</option>
+                    <option value="tipo3">Servidor/Hospedagem</option>
+                    <option value="tipo4">Suporte</option>
+                    </select>
+                    <br>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" class="form" placeholder="Digite sua descrição do problema" maxlength="1000" rows="25" required ></textarea>
+                <button type="submit" class="botaoenvia" onclick="concluido()">Abrir chamado</button>
+
+                <script>
+                    function concluido() {
+                        if(confirm("Chamado aberto com sucesso!")){
+                            window.location.href = "chamados.html";
+                        }
+                    }
+
+                    function desejacancelar(){
+                        if(confirm("Tem certeza?")){
+                            window.location.href = "chamados.html";
+                        }
+                    }
+                </script>
+
+
+                <button type="submit" class="cancelabotao" onclick="desejacancelar()">Cancelar chamado</button>
+                
+
+            </form>
+           
+        </main>
+
+    </body>
+</html>

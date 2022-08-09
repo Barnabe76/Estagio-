@@ -1,0 +1,115 @@
+
+h1{
+    text-align: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial, verdana;
+}
+
+body{
+    background: linear-gradient(to right, #fff, #ccc);
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+}
+
+label{
+    /*negrito*/
+    font-weight: bold;
+    /*tamanho*/
+    width: 100%;
+    margin: 15px 0; /* cima+baixo    -   direita+esquerda*/
+
+}
+
+.form{
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, #fff, #ccc);
+   
+
+}
+
+
+
+.botaoproximo, .botaonovo, .botaomeus{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer; /*muda o cursor*/
+    transition: all 1s;
+    font-size: large;
+}
+
+.botaoproximo:hover, .botaonovo:hover, .botaomeus:hover{
+    transition: 0.5s;
+    background-color: lightseagreen;
+    color: black;
+}
+
+.botoes{
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    display: grid;
+    text-align: center;
+}
+
+.botaomeus{
+    float: right;
+}
+
+
+
+
+.botaoenvia{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer; /*muda o cursor*/
+    transition: all 1s;
+    font-size: large;
+}
+
+.botaoenvia:hover{
+    background-color:greenyellow;
+    transform: scale() ;
+    color: green;
+}
+
+
+.cancelabotao{
+    margin: 20px 0;
+    padding: 15px;
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer; /*muda o cursor*/
+    transition: all 1s;
+    float: right;
+    font-size: large;
+    
+}
+
+.cancelabotao:hover{
+    background-color:greenyellow;
+    transform: scale() ;
+    color: green;
+}

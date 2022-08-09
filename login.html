@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Login</h1>
+
+        <br>
+        <br>
+
+        
+        <form name="form1" method="get"     > <!-- Formulário de abertura de chamado, linkar com banco de dados e chat -->
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required placeholder="Seu nome completo" maxlength="50" class="form" autocomplete="off">
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="email" required placeholder="Email válido" maxlenght="100" class="form" autocomplete="off">
+           
+            <button type="submit" class="botaoproximo" onclick="proximo()">proximo</button>
+
+            <script>
+
+                function proximo(){
+                    
+                        window.location.href = "chamados.html";
+                   
+                }
+            </script>
+            
+
+        </form>
+       
+    </main>
+</body>
+</html>
